@@ -8,14 +8,13 @@ import time
 def saveText(file, para):
     with open(file, 'w', encoding='utf-8') as f:
         for type, p in para:
-            print(p)
             if type == 'Title' or type == 'Note':
                 f.write(f"\n---------------------------\n")
                 f.write(f"{type}: {p.strip()}\n")
-                f.write("\n")  # Add extra newline for separation
+
             else:
                 f.write(f"{type}: {p.strip()}\n")
-                f.write("\n") 
+
 
 
 def extractType(soup):
@@ -97,7 +96,16 @@ def getMostRecentLink(driver):
 
 driver = webdriver.Chrome()
 link, name = getMostRecentLink(driver)
-name = name.replace(" ", "")
+name = name.replace(" ", "_")
+name = name.replace(".", "_")
+name = name.replace("/", "_")
+name = name.replace(":", "_")
+name = name.replace("?", "_")
+name = name.replace("*", "_")
+name = name.replace("<", "_")
+name = name.replace(">", "_")
+name = name.replace("|", "_")
+
 
 if link:
 
