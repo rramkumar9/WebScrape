@@ -6,14 +6,16 @@ from bs4 import BeautifulSoup
 import time
 
 def saveText(file, para):
-    open(file, 'w').close()
     with open(file, 'w', encoding='utf-8') as f:
-        for type ,p in para:
+        for type, p in para:
+            print(p)
             if type == 'Title' or type == 'Note':
                 f.write(f"\n---------------------------\n")
                 f.write(f"{type}: {p.strip()}\n")
-            else:    
+                f.write("\n")  # Add extra newline for separation
+            else:
                 f.write(f"{type}: {p.strip()}\n")
+                f.write("\n") 
 
 
 def extractType(soup):
@@ -92,38 +94,36 @@ def getMostRecentLink(driver):
         print(f"An error occurred: {e}")
     return ret, name
 
-def main():
-    driver = webdriver.Chrome()
-    link, name = getMostRecentLink(driver)
-    name = name.replace(" ", "")
 
-    if link:
+driver = webdriver.Chrome()
+link, name = getMostRecentLink(driver)
+name = name.replace(" ", "")
 
-        driver.get(link)
+if link:
 
+    driver.get(link)
+
+    
+    try:
+        target_div = WebDriverWait(driver, 30).until(
+            EC.presence_of_element_located((By.CLASS_NAME, 'BundleContentComponent'))
+        )
+        time.sleep(10)
         
-        try:
-            target_div = WebDriverWait(driver, 30).until(
-                EC.presence_of_element_located((By.CLASS_NAME, 'BundleContentComponent'))
-            )
-            time.sleep(10)
-            
-            html = driver.page_source
+        html = driver.page_source
 
 
-            soup = BeautifulSoup(html, 'html.parser')
-            grouped = extractType(soup)
-            saveText(f'{name}.txt', grouped)
+        soup = BeautifulSoup(html, 'html.parser')
+        grouped = extractType(soup)
+        print(grouped)
+        saveText(f'{name}.txt', grouped)
 
-            print("Finished")
-
-
-        except Exception as e:
-            print(f"An error occurred: {e}")
+        print("Finished")
 
 
-    driver.quit()
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
-if __name__ == "__main__":
-    main()
+
+driver.quit()
 
