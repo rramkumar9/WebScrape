@@ -6,36 +6,61 @@ from bs4 import BeautifulSoup
 import time
 
 def saveText(file, para):
+    open(file, 'w').close()
     with open(file, 'w', encoding='utf-8') as f:
         for type ,p in para:
-            f.write(f"{type}: {p.strip()}\n")
+            if type == 'Title' or type == 'Note':
+                f.write(f"\n---------------------------\n")
+                f.write(f"{type}: {p.strip()}\n")
+            else:    
+                f.write(f"{type}: {p.strip()}\n")
 
 
 def extractType(soup):
     grouped = []
 
-    for element in soup.find_all(['h2', 'div', 'p', 'ph', 'li']):
+    exclude = {
+        "Home", "Products", "Community", "Resources", "Get Support", "More",
+        "All", "Documentation", "Articles", "Videos", "Contents",
+        "Collapse All", "Expand All", "New and Enhanced Features",
+        "Announcements", "Fixed", "API", "Integrations",
+        "Docusign eSignature for Outlook﻿", "Revision History", ""
+    }
+
+
+
+
+    for element in soup.find_all(['h2', 'div', 'p', 'ph', 'li', 'span']):
+        text = element.get_text(strip=True)
+        if text in exclude:
+            continue
+
+
         if element.name == 'h2' or (element.name == 'div' and 'title' in (element.get('class') or [])):
             text = element.get_text(strip=True)
-            if '"' in text:
-                grouped.append(('Title', text))
+            grouped.append(('Title', text))
 
         elif element.name in ['p', 'ph']:
             text = element.get_text(strip=True)
-            if '"' in text:
-                grouped.append(('Paragraph', text))
+            grouped.append(('Paragraph', text))
 
         elif element.name == 'li':
             text = element.get_text(strip=True)
-            if '"' in text:
-                grouped.append(('Bullet', text))
+            grouped.append(('Bullet', text))
 
+        
+        elif 'note' in (element.get('class') or []):
+            text = element.get_text(strip=True)
+            if text:
+                grouped.append(('Note', text))
+            
     return grouped
 
 
 def getMostRecentLink(driver):
 
     ret = None
+    name = ""
     driver.get('https://support.docusign.com/s/releasenotes?language=en_US&labelKey=Release_Note&page=1')
 
     try:
@@ -49,11 +74,10 @@ def getMostRecentLink(driver):
 
         target_div = soup.find('div', class_='row_item-title')
         if target_div:
-            #print("Target div found!")
-            #print(target_div)
             link = target_div.find('a')
             
             if link and link.has_attr('href'):
+                name = link.get_text(strip=True)
                 href_value = link['href']
                 print("Href found:", href_value)
                 ret = href_value
@@ -66,53 +90,40 @@ def getMostRecentLink(driver):
 
     except Exception as e:
         print(f"An error occurred: {e}")
-    return ret
+    return ret, name
 
+def main():
+    driver = webdriver.Chrome()
+    link, name = getMostRecentLink(driver)
+    name = name.replace(" ", "")
 
-driver = webdriver.Chrome()
-link = getMostRecentLink(driver)
+    if link:
 
-if link:
+        driver.get(link)
 
-    driver.get(link)
-
-    """
-    Need to flix where the bs is checking. Update content is contaited within 
-    BundleContentComponent Class but is under other sub classes (maybe why bs is
-    unable to see). Could also be to not enough time waiting
-    """
-    
-    try:
-        target_div = WebDriverWait(driver, 30).until(
-            EC.presence_of_element_located((By.CLASS_NAME, 'BundleContentComponent'))
-        )
-        time.sleep(10)
         
-        html = driver.page_source
-
-        soup = BeautifulSoup(html, 'html.parser')
-        grouped = extractType(soup)
-        saveText('outputa.txt', grouped)
-
-
-        """target_div = soup.find('div', class_='BundleContentComponent')
-        print(target_div.prettify())
-        if target_div:
-            paragraphs = target_div.find_all(['p', 'ph'])
-            paragraph_texts = [para.get_text(strip=True) for para in paragraphs]
-            saveText('output.txt', paragraph_texts)
-        """
+        try:
+            target_div = WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.CLASS_NAME, 'BundleContentComponent'))
+            )
+            time.sleep(10)
+            
+            html = driver.page_source
 
 
-        else:
-            print("Target div not found!")
+            soup = BeautifulSoup(html, 'html.parser')
+            grouped = extractType(soup)
+            saveText(f'{name}.txt', grouped)
 
-    except Exception as e:
-        print(f"An error occurred: {e}")
-    
+            print("Finished")
 
-else:
-    print("error")
 
-driver.quit()
+        except Exception as e:
+            print(f"An error occurred: {e}")
+
+
+    driver.quit()
+
+if __name__ == "__main__":
+    main()
 
