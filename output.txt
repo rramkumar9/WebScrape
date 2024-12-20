@@ -1,0 +1,102 @@
+
+This
+                        publication applies to the Demo and Production releases for December 2024,
+                        version 24.4.00.00.All datacenters have been deployed for this Production
+        release.
+The following changes have been made to this document since its initial release:
+Organization-Level Connect (OLC) is a true enterprise feature that offers the
+                        following benefits:
+OLC provides a centralized platform for efficiently managing all of your
+                        Connect configurations. It helps streamline your operations, improve
+                        compliance standards, and enhance productivity.
+Use cases include:
+We are branding our emails to align with the launch of Intelligent Agreement Management. You
+				will notice the following updates to our email colors and icons that enhance the
+				overall look and feel:
+This is what our standard emails will look like:
+As part of the company-wide branding effort, we are rolling out the new brand colors
+				to the web application. In the beginning of December, colors and fonts on thePreparepage will be updated. This is purely a visual
+				change and there are no functional changes being rolled out as part of this
+				update.
+With this enhancement, the Data Verification phone field group will
+                            provide a dropdown of country calling codes. Signers will now be able to
+                            select a country from a pre-populated list. This offers a better signing
+                            experience, and helps reduce verification errors.
+Twilio is a new extension app for Data Verification. Twilio’s real-time email address
+				validation service improves deliverability by checking email addresses against a
+				global database before you use them.
+This validation service reduces document errors, not-in-good-order (NIGO) rates, and
+				post-signature verification costs. With trillions of phone and email transactions
+				per year, Twilio is a globally trusted customer engagement platform. Customers with
+				access to Basic Data Verification will be able to use the Twilio app in eSignature
+				at no extra cost.
+You can download the Twilio app from theDocusignApp Center.
+Data verification field groups can contain both required and optional
+				fields. With this enhancement, all required fields in a group are protected and
+				cannot be deleted. This change ensures that verifications receive the necessary data
+				to complete without errors.
+Required fields in a verification group are indicated by a red asterisk. For example,
+				the verification group forPostal Addresscontains both
+				required and optional fields. In this group, “Address Line 2” is optional; the
+				preparer can delete this field after adding the group to their document. However,
+				the remaining fields are all required and cannot be deleted.
+This enhancement is available now in both Demo and Production accounts.
+The URL to sign envelopes with the eSignature web application is changing in
+                        the Demo and Production environments.
+Customers accessing the application using the old URLs will be automatically
+                        redirected to the new ones.
+The updated URLs are expected to be live for all Demo customers by the end of
+                        October, and for all Production customers between November and February. The
+                        exceptions to this are customers using embedded signing and IL-4
+                        customers.
+Docusignis updating the Identity Verification user interface and
+				page layout to make it easier to view and manage identity verification
+				configurations. These changes appear for all account administrators usingDocusignID Verification and ID Verification Premier by December
+				11, 2024.
+The changes include:
+A new template-like selection page for choosing the IDV method and signature
+						type.
+A more compact identity verification settings page layout with collapsible
+						sections and tabs for selecting countries, ID types, and the ID evidence to
+						store.
+Options to search for identity verification configurations and filter by
+						status.
+We are updating the SMS templates to reduce spam perception and enhance signer
+				engagement.  These improvements include the following:
+The number of static characters has been reduced from 59 to 33.
+The sender name has been removed to provide more space for key variable
+						details like thecompany nameanddocument name.
+This modernization ensures messages appear more relevant and trustworthy to signers,
+				enabling faster recognition and action. These updates are designed to help signers
+				complete their envelopes more quickly and increase overall completion rates.
+{Sender Name} from {Company Name} has sent you aDocusigndocument
+										“{Document Name}” to view and sign: {Envelope URL}
+{Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
+										{Envelope URL}
+{Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
+										review: {Envelope URL}
+Docusign: {companyName} sent you
+										“{documentName}” to sign: {Envelope URL}
+Docusign: {companyName} CC-ed you on
+										“{agreementName}”: {Envelope URL}
+Docusign: {companyName} sent you
+										“{agreementName}” to review: {Envelope URL}
+The SMS message from the updated template would look similar to the
+							following:
+Signing Groups enable you to send an envelope to a predefined group of recipients and
+				have any one member of the group sign your documents. When you send an envelope to a
+				Signing Group, any one member of the group can open it and sign it with their own
+				signature.
+We will begin ramping in early December and conclude in January. We are introducing a new step
+				for signers to improve awareness of the signer's role in the process. A new modal
+				will now be displayed to the first member of the group who accesses the
+				envelope:
+This modal provides two key improvements to the signing process:
+Informs the signer that they are the first one in the signing group to access
+						the envelope.
+Presents the member with a confirmation prompt, allowing them to continue and
+						assign the envelope to themselves.
+This enhancement helps group members understand the signing process by explicitly
+				indicating that they are choosing to sign the envelope for the Signing Group. By
+				ensuring that the first signer acknowledges their role in this process, we enhance
+				accountability and streamline the signing experience for all group members.

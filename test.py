@@ -3,7 +3,34 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+import time
 
+def saveText(file, para):
+    with open(file, 'w', encoding='utf-8') as f:
+        for type ,p in para:
+            f.write(f"{type}: {p.strip()}\n")
+
+
+def extractType(soup):
+    grouped = []
+
+    for element in soup.find_all(['h2', 'div', 'p', 'ph', 'li']):
+        if element.name == 'h2' or (element.name == 'div' and 'title' in (element.get('class') or [])):
+            text = element.get_text(strip=True)
+            if '"' in text:
+                grouped.append(('Title', text))
+
+        elif element.name in ['p', 'ph']:
+            text = element.get_text(strip=True)
+            if '"' in text:
+                grouped.append(('Paragraph', text))
+
+        elif element.name == 'li':
+            text = element.get_text(strip=True)
+            if '"' in text:
+                grouped.append(('Bullet', text))
+
+    return grouped
 
 
 def getMostRecentLink(driver):
@@ -59,18 +86,22 @@ if link:
         target_div = WebDriverWait(driver, 30).until(
             EC.presence_of_element_located((By.CLASS_NAME, 'BundleContentComponent'))
         )
+        time.sleep(10)
         
         html = driver.page_source
 
         soup = BeautifulSoup(html, 'html.parser')
+        grouped = extractType(soup)
+        saveText('outputa.txt', grouped)
 
-        target_div = soup.find('div', class_='BundleContentComponent')
+
+        """target_div = soup.find('div', class_='BundleContentComponent')
         print(target_div.prettify())
         if target_div:
             paragraphs = target_div.find_all(['p', 'ph'])
-            for para in paragraphs:
-                print("\nParagraph text:", para.get_text(strip=True))
-
+            paragraph_texts = [para.get_text(strip=True) for para in paragraphs]
+            saveText('output.txt', paragraph_texts)
+        """
 
 
         else:
