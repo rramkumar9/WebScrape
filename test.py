@@ -31,13 +31,13 @@ def extractType(soup):
 
 
 
-    for element in soup.find_all(['h2', 'div', 'p', 'ph', 'li', 'span']):
+    for element in soup.find_all(['h1', 'h2', 'div', 'p', 'ph', 'li', 'span']):
         text = element.get_text(strip=True)
         if text in exclude:
             continue
 
 
-        if element.name == 'h2' or (element.name == 'div' and 'title' in (element.get('class') or [])):
+        if element.name in ['h1', 'h2'] or (element.name == 'div' and 'title' in (element.get('class') or [])):
             text = element.get_text(strip=True)
             grouped.append(('Title', text))
 
