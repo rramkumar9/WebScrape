@@ -4,16 +4,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 import time
+import re
+
+
 
 def saveText(file, para):
     with open(file, 'w', encoding='utf-8') as f:
         for type, p in para:
+            p_up = p.replace("\t", "").replace("\n", "")
+            p_ups = re.sub(r"\s+", " ", p_up).strip()
             if type == 'Title' or type == 'Note':
                 f.write(f"\n---------------------------\n")
-                f.write(f"{type}: {p.strip()}\n")
+                f.write(f"{type}: {p_ups.strip()}\n")
                 
             else:
-                f.write(f"{type}: {p.strip()}\n")
+                f.write(f"{type}: {p_ups.strip()}\n")
 
 
 
@@ -25,7 +30,14 @@ def extractType(soup):
         "All", "Documentation", "Articles", "Videos", "Contents",
         "Collapse All", "Expand All", "New and Enhanced Features",
         "Announcements", "Fixed", "API", "Integrations",
-        "Docusign eSignature for Outlook﻿", "Revision History", ""
+        "Docusign eSignature for Outlook﻿", "Revision History", "",
+        "Admin Release Notes", "Prev", "Next", "Share this page",
+        "Send us your feedback", "Thank you", "Your Privacy Choices",
+        "These cookies are necessary for the website to function and cannot be switched off in our systems. They "+
+        "are usually only set in response to actions made by you which amount to a request for services, such "+
+        "as setting your privacy preferences, logging in or filling in forms.    You can set your browser to block "+
+        "or alert you about these cookies, but some parts of the site will not then work. These cookies do not store "+
+        "any personally identifiable information."
     }
 
 
@@ -154,8 +166,6 @@ if link:
         Also for testing
         '''
         saveText(f'Docusign_eSignature_24_4_00_00_Release_Notes__December_2024.txt', grouped)
-
-
         print("Finished")
 
 

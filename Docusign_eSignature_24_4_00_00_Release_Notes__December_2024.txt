@@ -7,280 +7,141 @@ Title: New and Enhanced Features﻿
 
 ---------------------------
 Title: Release Note Applicability
-Paragraph: This
-                        publication applies to the Demo and Production releases for December 2024,
-                        version 24.4.00.00.All datacenters have been deployed for this Production
-        release.
+Paragraph: This publication applies to the Demo and Production releases for December 2024, version 24.4.00.00.All datacenters have been deployed for this Production release.
 
 ---------------------------
-Note: Important:Feature availability timing may vary. Each month,
-        Release Notes include items from different parts of theDocusignproduct.
-        Some of these areas have different release cycles, which means availability of the feature
-        may vary. Items are available by the end of the month for which the notes are written, but
-        may appear slightly before or after the release notes are published.
+Note: Important:Feature availability timing may vary. Each month, Release Notes include items from different parts of theDocusignproduct. Some of these areas have different release cycles, which means availability of the feature may vary. Items are available by the end of the month for which the notes are written, but may appear slightly before or after the release notes are published.
 
 ---------------------------
 Title: Release Note Corrections
 Paragraph: The following changes have been made to this document since its initial release:
-Bullet: Update link in entry,Data Verification in eSignature - Twilio App for Email
-                            Verification.
+Bullet: Update link in entry,Data Verification in eSignature - Twilio App for Email Verification.
 
 ---------------------------
-Title: Organization-Level Connect For
-                        Enterprises
-Paragraph: Organization-Level Connect (OLC) is a true enterprise feature that offers the
-                        following benefits:
-Bullet: A single view of all Connect configurations across accounts linked to
-                            your Organization.
+Title: Organization-Level Connect For Enterprises
+Paragraph: Organization-Level Connect (OLC) is a true enterprise feature that offers the following benefits:
+Bullet: A single view of all Connect configurations across accounts linked to your Organization.
 Bullet: New search and filtering functionality.
 Bullet: Organization-Level Connect configurations.
-Bullet: Increased limits for Envelope Publish and Downloading Logs compared to
-                            the account level.
-Paragraph: OLC provides a centralized platform for efficiently managing all of your
-                        Connect configurations. It helps streamline your operations, improve
-                        compliance standards, and enhance productivity.
+Bullet: Increased limits for Envelope Publish and Downloading Logs compared to the account level.
+Paragraph: OLC provides a centralized platform for efficiently managing all of your Connect configurations. It helps streamline your operations, improve compliance standards, and enhance productivity.
 Paragraph: Use cases include:
 Bullet: Managing settings for Connect configurations across multipleDocusignaccounts.
-Bullet: Quickly identifying a specific account or configuration that is
-                            experiencing a Connect failure.
-Bullet: Proactively consolidating hundreds of Configurations into a single
-                            Organization Level Connect configuration
+Bullet: Quickly identifying a specific account or configuration that is experiencing a Connect failure.
+Bullet: Proactively consolidating hundreds of Configurations into a single Organization Level Connect configuration
 Sub Bullet: Supported functionality
-Sub Title: Organization-level Connect configurations support only the Connect
-                                2.0 (JSON/SIM) experience. The supported security options are HMAC,
-                                TLS, and OAuth. Basic Authentication is not supported.
+Sub Title: Organization-level Connect configurations support only the Connect 2.0 (JSON/SIM) experience. The supported security options are HMAC, TLS, and OAuth. Basic Authentication is not supported.
 Sub Bullet: Availability
-Sub Title: Organization-level Connect will soon be available on Enterprise Pro
-                                and Organization Management plans.Phase 1The ability to manage account level configurations and
-                                            view Connect logs across all configurations at the
-                                            Organization level. Available by mid-December 2024.Phase 2The ability to create Organization-level Configurations,
-                                            Republishing Envelopes, and enhanced search
-                                            functionality. Available by the end of January
-                                            2025.
+Sub Title: Organization-level Connect will soon be available on Enterprise Pro and Organization Management plans.Phase 1The ability to manage account level configurations and view Connect logs across all configurations at the Organization level. Available by mid-December 2024.Phase 2The ability to create Organization-level Configurations, Republishing Envelopes, and enhanced search functionality. Available by the end of January 2025.
 Sub Bullet: Phase 1
-Sub Title: The ability to manage account level configurations and
-                                            view Connect logs across all configurations at the
-                                            Organization level. Available by mid-December 2024.
+Sub Title: The ability to manage account level configurations and view Connect logs across all configurations at the Organization level. Available by mid-December 2024.
 Sub Bullet: Phase 2
-Sub Title: The ability to create Organization-level Configurations,
-                                            Republishing Envelopes, and enhanced search
-                                            functionality. Available by the end of January
-                                            2025.
-Image: Screenshot of Connect (Webhooks) page. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Connect-Webhooks.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Sub Title: The ability to create Organization-level Configurations, Republishing Envelopes, and enhanced search functionality. Available by the end of January 2025.
+Image: Screenshot of Connect (Webhooks) page. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Connect-Webhooks.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
 Title: Email Branding - Updates to Color and Icons
-Paragraph: We are branding our emails to align with the launch of Intelligent Agreement Management. You
-				will notice the following updates to our email colors and icons that enhance the
-				overall look and feel:
+Paragraph: We are branding our emails to align with the launch of Intelligent Agreement Management. Youwill notice the following updates to our email colors and icons that enhance theoverall look and feel:
 Bullet: New colors:The email backgrounds and buttons will feature a new color palette.
 Bullet: Updated icons:The icons will be intuitive and visually appealing.
 
 ---------------------------
-Note: Important:If your account contains custombasic branding(logo and colors), these changes will
-						not affect your current logo and color setup. Only the icons will be
-						updated.For customers usingemail resource filesand basic branding, emails will remain
-						intact. The logo, color, and icons will not be affected.BothSigningandSendingbrands need to be set up with basic
-						branding or resource files to maintain customized brand on all emails.
-						Signature-related emails are affected by Signing brand, while Account
-						related emails (Account activation as an example) are affected by Sending
-						brand.
-Bullet: If your account contains custombasic branding(logo and colors), these changes will
-						not affect your current logo and color setup. Only the icons will be
-						updated.
-Bullet: For customers usingemail resource filesand basic branding, emails will remain
-						intact. The logo, color, and icons will not be affected.
-Bullet: BothSigningandSendingbrands need to be set up with basic
-						branding or resource files to maintain customized brand on all emails.
-						Signature-related emails are affected by Signing brand, while Account
-						related emails (Account activation as an example) are affected by Sending
-						brand.
+Note: Important:If your account contains custombasic branding(logo and colors), these changes willnot affect your current logo and color setup. Only the icons will beupdated.For customers usingemail resource filesand basic branding, emails will remainintact. The logo, color, and icons will not be affected.BothSigningandSendingbrands need to be set up with basicbranding or resource files to maintain customized brand on all emails.Signature-related emails are affected by Signing brand, while Accountrelated emails (Account activation as an example) are affected by Sendingbrand.
+Bullet: If your account contains custombasic branding(logo and colors), these changes willnot affect your current logo and color setup. Only the icons will beupdated.
+Bullet: For customers usingemail resource filesand basic branding, emails will remainintact. The logo, color, and icons will not be affected.
+Bullet: BothSigningandSendingbrands need to be set up with basicbranding or resource files to maintain customized brand on all emails.Signature-related emails are affected by Signing brand, while Accountrelated emails (Account activation as an example) are affected by Sendingbrand.
 Paragraph: This is what our standard emails will look like:
-Image: Screenshot of IAM eSignature email. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/IAM-email-updated-colors.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Image: Screenshot of IAM eSignature email. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/IAM-email-updated-colors.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
 Title: New Colors and Fonts on Prepare Page
-Paragraph: As part of the company-wide branding effort, we are rolling out the new brand colors
-				to the web application. In the beginning of December, colors and fonts on thePreparepage will be updated. This is purely a visual
-				change and there are no functional changes being rolled out as part of this
-				update.
-Image: Screenshot of updated Prepare page colors. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Prepare-screen-color-updates.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Paragraph: As part of the company-wide branding effort, we are rolling out the new brand colorsto the web application. In the beginning of December, colors and fonts on thePreparepage will be updated. This is purely a visualchange and there are no functional changes being rolled out as part of thisupdate.
+Image: Screenshot of updated Prepare page colors. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Prepare-screen-color-updates.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
 Title: Country Code Dropdown for Phone Verification Fields
-Paragraph: With this enhancement, the Data Verification phone field group will
-                            provide a dropdown of country calling codes. Signers will now be able to
-                            select a country from a pre-populated list. This offers a better signing
-                            experience, and helps reduce verification errors.
-Image: Screenshot of international country calling codes. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/International-Calling-Codes.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Paragraph: With this enhancement, the Data Verification phone field group will provide a dropdown of country calling codes. Signers will now be able to select a country from a pre-populated list. This offers a better signing experience, and helps reduce verification errors.
+Image: Screenshot of international country calling codes. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/International-Calling-Codes.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
 Title: Data Verification in eSignature - Twilio App for Email Verification
-Paragraph: Twilio is a new extension app for Data Verification. Twilio’s real-time email address
-				validation service improves deliverability by checking email addresses against a
-				global database before you use them.
-Bullet: Indicate to users that the address they have entered into an agreement field is
-					invalid.
-Bullet: Prevent invalid or non-existent email addresses from entering your
-					database.
-Paragraph: This validation service reduces document errors, not-in-good-order (NIGO) rates, and
-				post-signature verification costs. With trillions of phone and email transactions
-				per year, Twilio is a globally trusted customer engagement platform. Customers with
-				access to Basic Data Verification will be able to use the Twilio app in eSignature
-				at no extra cost.
+Paragraph: Twilio is a new extension app for Data Verification. Twilio’s real-time email addressvalidation service improves deliverability by checking email addresses against aglobal database before you use them.
+Bullet: Indicate to users that the address they have entered into an agreement field isinvalid.
+Bullet: Prevent invalid or non-existent email addresses from entering yourdatabase.
+Paragraph: This validation service reduces document errors, not-in-good-order (NIGO) rates, andpost-signature verification costs. With trillions of phone and email transactionsper year, Twilio is a globally trusted customer engagement platform. Customers withaccess to Basic Data Verification will be able to use the Twilio app in eSignatureat no extra cost.
 Paragraph: You can download the Twilio app from theDocusignApp Center.
 
 ---------------------------
 Title: Data Verification Field Groups - Adding Protection for Required Fields
-Paragraph: Data verification field groups can contain both required and optional
-				fields. With this enhancement, all required fields in a group are protected and
-				cannot be deleted. This change ensures that verifications receive the necessary data
-				to complete without errors.
-Image: Screenshot of Data Verification Grouped Fields , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
-Paragraph: Required fields in a verification group are indicated by a red asterisk. For example,
-				the verification group forPostal Addresscontains both
-				required and optional fields. In this group, “Address Line 2” is optional; the
-				preparer can delete this field after adding the group to their document. However,
-				the remaining fields are all required and cannot be deleted.
-Image: Screenshot of deletion notice for verification field group. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields-Deletion-Notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Paragraph: Data verification field groups can contain both required and optionalfields. With this enhancement, all required fields in a group are protected andcannot be deleted. This change ensures that verifications receive the necessary datato complete without errors.
+Image: Screenshot of Data Verification Grouped Fields , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
+Paragraph: Required fields in a verification group are indicated by a red asterisk. For example,the verification group forPostal Addresscontains bothrequired and optional fields. In this group, “Address Line 2” is optional; thepreparer can delete this field after adding the group to their document. However,the remaining fields are all required and cannot be deleted.
+Image: Screenshot of deletion notice for verification field group. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields-Deletion-Notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
-Note: Note:You cannot delete individual fields from the
-				verification field group. They must be deleted as a group.
+Note: Note:You cannot delete individual fields from theverification field group. They must be deleted as a group.
 Paragraph: This enhancement is available now in both Demo and Production accounts.
 
 ---------------------------
-Title: Updated Signing URLs for
-                        eSignature Web Application
-Paragraph: The URL to sign envelopes with the eSignature web application is changing in
-                        the Demo and Production environments.
+Title: Updated Signing URLs for eSignature Web Application
+Paragraph: The URL to sign envelopes with the eSignature web application is changing in the Demo and Production environments.
 Bullet: The URL in Demo is changing toapps-d.docusign.com/sign.
 Bullet: The URL in Production is changing toapps.docusign.com/sign.
-Paragraph: Customers accessing the application using the old URLs will be automatically
-                        redirected to the new ones.
-Paragraph: The updated URLs are expected to be live for all Demo customers by the end of
-                        October, and for all Production customers between November and February. The
-                        exceptions to this are customers using embedded signing and IL-4
-                        customers.
+Paragraph: Customers accessing the application using the old URLs will be automatically redirected to the new ones.
+Paragraph: The updated URLs are expected to be live for all Demo customers by the end of October, and for all Production customers between November and February. The exceptions to this are customers using embedded signing and IL-4 customers.
 
 ---------------------------
 Title: Identity Verification User Interface Updates
-Paragraph: Docusignis updating the Identity Verification user interface and
-				page layout to make it easier to view and manage identity verification
-				configurations. These changes appear for all account administrators usingDocusignID Verification and ID Verification Premier by December
-				11, 2024.
+Paragraph: Docusignis updating the Identity Verification user interface andpage layout to make it easier to view and manage identity verificationconfigurations. These changes appear for all account administrators usingDocusignID Verification and ID Verification Premier by December11, 2024.
 Paragraph: The changes include:
-Bullet: A new template-like selection page for choosing the IDV method and signature
-						type.
-Paragraph: A new template-like selection page for choosing the IDV method and signature
-						type.
-Bullet: A more compact identity verification settings page layout with collapsible
-						sections and tabs for selecting countries, ID types, and the ID evidence to
-						store.
-Paragraph: A more compact identity verification settings page layout with collapsible
-						sections and tabs for selecting countries, ID types, and the ID evidence to
-						store.
-Bullet: Options to search for identity verification configurations and filter by
-						status.
-Paragraph: Options to search for identity verification configurations and filter by
-						status.
+Bullet: A new template-like selection page for choosing the IDV method and signaturetype.
+Paragraph: A new template-like selection page for choosing the IDV method and signaturetype.
+Bullet: A more compact identity verification settings page layout with collapsiblesections and tabs for selecting countries, ID types, and the ID evidence tostore.
+Paragraph: A more compact identity verification settings page layout with collapsiblesections and tabs for selecting countries, ID types, and the ID evidence tostore.
+Bullet: Options to search for identity verification configurations and filter bystatus.
+Paragraph: Options to search for identity verification configurations and filter bystatus.
 
 ---------------------------
 Title: SMS Delivery Template Update
-Paragraph: We are updating the SMS templates to reduce spam perception and enhance signer
-				engagement.  These improvements include the following:
+Paragraph: We are updating the SMS templates to reduce spam perception and enhance signerengagement. These improvements include the following:
 Bullet: The number of static characters has been reduced from 59 to 33.
 Paragraph: The number of static characters has been reduced from 59 to 33.
-Bullet: The sender name has been removed to provide more space for key variable
-						details like thecompany nameanddocument name.
-Paragraph: The sender name has been removed to provide more space for key variable
-						details like thecompany nameanddocument name.
-Paragraph: This modernization ensures messages appear more relevant and trustworthy to signers,
-				enabling faster recognition and action. These updates are designed to help signers
-				complete their envelopes more quickly and increase overall completion rates.
+Bullet: The sender name has been removed to provide more space for key variabledetails like thecompany nameanddocument name.
+Paragraph: The sender name has been removed to provide more space for key variabledetails like thecompany nameanddocument name.
+Paragraph: This modernization ensures messages appear more relevant and trustworthy to signers,enabling faster recognition and action. These updates are designed to help signerscomplete their envelopes more quickly and increase overall completion rates.
 Sub Bullet: Current SMS Templates
-Sub Title: Needs to Sign{Sender Name} from {Company Name} has sent you aDocusigndocument
-										“{Document Name}” to view and sign: {Envelope URL}Carbon Copy (CC){Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
-										{Envelope URL}Certified Delivery (CD){Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
-										review: {Envelope URL}
+Sub Title: Needs to Sign{Sender Name} from {Company Name} has sent you aDocusigndocument“{Document Name}” to view and sign: {Envelope URL}Carbon Copy (CC){Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:{Envelope URL}Certified Delivery (CD){Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” toreview: {Envelope URL}
 Sub Bullet: Needs to Sign
-Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument
-										“{Document Name}” to view and sign: {Envelope URL}
-Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument
-										“{Document Name}” to view and sign: {Envelope URL}
+Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument“{Document Name}” to view and sign: {Envelope URL}
+Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument“{Document Name}” to view and sign: {Envelope URL}
 Sub Bullet: Carbon Copy (CC)
-Sub Title: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
-										{Envelope URL}
-Paragraph: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
-										{Envelope URL}
+Sub Title: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:{Envelope URL}
+Paragraph: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:{Envelope URL}
 Sub Bullet: Certified Delivery (CD)
-Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
-										review: {Envelope URL}
-Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
-										review: {Envelope URL}
+Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” toreview: {Envelope URL}
+Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” toreview: {Envelope URL}
 Sub Bullet: New SMS Templates
-Sub Title: Needs to SignDocusign: {companyName} sent you
-										“{documentName}” to sign: {Envelope URL}Carbon Copy (CC)Docusign: {companyName} CC-ed you on
-										“{agreementName}”: {Envelope URL}Certified Delivery (CD)Docusign: {companyName} sent you
-										“{agreementName}” to review: {Envelope URL}The SMS message from the updated template would look similar to the
-							following:
+Sub Title: Needs to SignDocusign: {companyName} sent you“{documentName}” to sign: {Envelope URL}Carbon Copy (CC)Docusign: {companyName} CC-ed you on“{agreementName}”: {Envelope URL}Certified Delivery (CD)Docusign: {companyName} sent you“{agreementName}” to review: {Envelope URL}The SMS message from the updated template would look similar to thefollowing:
 Sub Bullet: Needs to Sign
-Sub Title: Docusign: {companyName} sent you
-										“{documentName}” to sign: {Envelope URL}
-Paragraph: Docusign: {companyName} sent you
-										“{documentName}” to sign: {Envelope URL}
+Sub Title: Docusign: {companyName} sent you“{documentName}” to sign: {Envelope URL}
+Paragraph: Docusign: {companyName} sent you“{documentName}” to sign: {Envelope URL}
 Sub Bullet: Carbon Copy (CC)
-Sub Title: Docusign: {companyName} CC-ed you on
-										“{agreementName}”: {Envelope URL}
-Paragraph: Docusign: {companyName} CC-ed you on
-										“{agreementName}”: {Envelope URL}
+Sub Title: Docusign: {companyName} CC-ed you on“{agreementName}”: {Envelope URL}
+Paragraph: Docusign: {companyName} CC-ed you on“{agreementName}”: {Envelope URL}
 Sub Bullet: Certified Delivery (CD)
-Sub Title: Docusign: {companyName} sent you
-										“{agreementName}” to review: {Envelope URL}
-Paragraph: Docusign: {companyName} sent you
-										“{agreementName}” to review: {Envelope URL}
-Paragraph: The SMS message from the updated template would look similar to the
-							following:
-Image: Screenshot of SMS message with updated templates. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/SMS-Mobile-Message.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Sub Title: Docusign: {companyName} sent you“{agreementName}” to review: {Envelope URL}
+Paragraph: Docusign: {companyName} sent you“{agreementName}” to review: {Envelope URL}
+Paragraph: The SMS message from the updated template would look similar to thefollowing:
+Image: Screenshot of SMS message with updated templates. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/SMS-Mobile-Message.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 
 ---------------------------
 Title: Update to the Signing Process for Signing Groups
-Paragraph: Signing Groups enable you to send an envelope to a predefined group of recipients and
-				have any one member of the group sign your documents. When you send an envelope to a
-				Signing Group, any one member of the group can open it and sign it with their own
-				signature.
-Paragraph: We will begin ramping in early December and conclude in January. We are introducing a new step
-				for signers to improve awareness of the signer's role in the process. A new modal
-				will now be displayed to the first member of the group who accesses the
-				envelope:
-Image: Screenshot of Signing Group assignment notice. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Signing-Group-assignment-notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
+Paragraph: Signing Groups enable you to send an envelope to a predefined group of recipients andhave any one member of the group sign your documents. When you send an envelope to aSigning Group, any one member of the group can open it and sign it with their ownsignature.
+Paragraph: We will begin ramping in early December and conclude in January. We are introducing a new stepfor signers to improve awareness of the signer's role in the process. A new modalwill now be displayed to the first member of the group who accesses theenvelope:
+Image: Screenshot of Signing Group assignment notice. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Signing-Group-assignment-notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NTA3NjcsInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.m1U4NX9Ket5KtohnMf5DxtS_3YxgARGBBtroYuo42Rs&_LANG=enus
 Paragraph: This modal provides two key improvements to the signing process:
-Bullet: Informs the signer that they are the first one in the signing group to access
-						the envelope.
-Paragraph: Informs the signer that they are the first one in the signing group to access
-						the envelope.
-Bullet: Presents the member with a confirmation prompt, allowing them to continue and
-						assign the envelope to themselves.
-Paragraph: Presents the member with a confirmation prompt, allowing them to continue and
-						assign the envelope to themselves.
-Paragraph: This enhancement helps group members understand the signing process by explicitly
-				indicating that they are choosing to sign the envelope for the Signing Group. By
-				ensuring that the first signer acknowledges their role in this process, we enhance
-				accountability and streamline the signing experience for all group members.
-Bullet: Admin Release Notes
-Paragraph: Prev
-Paragraph: Next
-
----------------------------
-Title: Share this page
-
----------------------------
-Title: Send us your feedback
-
----------------------------
-Title: Thank you
-Paragraph: Admin Release Notes
-
----------------------------
-Title: Your Privacy Choices
-Paragraph: These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms.    You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+Bullet: Informs the signer that they are the first one in the signing group to accessthe envelope.
+Paragraph: Informs the signer that they are the first one in the signing group to accessthe envelope.
+Bullet: Presents the member with a confirmation prompt, allowing them to continue andassign the envelope to themselves.
+Paragraph: Presents the member with a confirmation prompt, allowing them to continue andassign the envelope to themselves.
+Paragraph: This enhancement helps group members understand the signing process by explicitlyindicating that they are choosing to sign the envelope for the Signing Group. Byensuring that the first signer acknowledges their role in this process, we enhanceaccountability and streamline the signing experience for all group members.
