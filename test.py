@@ -11,7 +11,7 @@ def saveText(file, para):
             if type == 'Title' or type == 'Note':
                 f.write(f"\n---------------------------\n")
                 f.write(f"{type}: {p.strip()}\n")
-
+                
             else:
                 f.write(f"{type}: {p.strip()}\n")
 
@@ -31,11 +31,12 @@ def extractType(soup):
 
 
 
-    for element in soup.find_all(['h1', 'h2', 'div', 'p', 'ph', 'li', 'span']):
-        text = element.get_text(strip=True)
-        if text in exclude:
-            continue
-
+    for element in soup.find_all(['h1', 'h2', 'div', 'p', 'ph', 'li', 'span', 'img', 'dd', 'dt']):
+        
+        if element.name != "img":
+            text = element.get_text(strip=True)
+            if text in exclude:
+                continue
 
         if element.name in ['h1', 'h2'] or (element.name == 'div' and 'title' in (element.get('class') or [])):
             text = element.get_text(strip=True)
@@ -48,6 +49,21 @@ def extractType(soup):
         elif element.name == 'li':
             text = element.get_text(strip=True)
             grouped.append(('Bullet', text))
+        
+        elif element.name == 'dd':
+            text = element.get_text(strip=True)
+            grouped.append(('Sub Title', text))
+        
+        elif element.name == 'dt':
+            text = element.get_text(strip=True)
+            grouped.append(('Sub Bullet', text))
+        
+        elif element.name == 'img' and 'image' in (element.get('class') or []):
+            link = element.get('src', 'No link')
+            title = element.get('alt', 'No title')
+            text = f'{title} , Link: {link}'
+            grouped.append(('Image', text))
+
 
         
         elif 'note' in (element.get('class') or []):
@@ -109,7 +125,14 @@ name = name.replace("|", "_")
 
 if link:
 
-    driver.get(link)
+    #driver.get(link)
+
+    '''
+    For Testing using this update
+    https://support.docusign.com/s/document-item?language=en_US&bundleId=oqn1730308722576&topicId=kzc1730309303090.html&_LANG=enus
+    '''
+
+    driver.get('https://support.docusign.com/s/document-item?language=en_US&bundleId=oqn1730308722576&topicId=kzc1730309303090.html&_LANG=enus')
 
     
     try:
@@ -122,9 +145,16 @@ if link:
 
 
         soup = BeautifulSoup(html, 'html.parser')
+        #print(soup.prettify())
         grouped = extractType(soup)
         print(grouped)
-        saveText(f'{name}.txt', grouped)
+
+        #saveText(f'{name}.txt', grouped)
+        '''
+        Also for testing
+        '''
+        saveText(f'Docusign_eSignature_24_4_00_00_Release_Notes__December_2024.txt', grouped)
+
 
         print("Finished")
 

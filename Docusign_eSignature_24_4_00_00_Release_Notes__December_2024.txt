@@ -1,5 +1,11 @@
 
 ---------------------------
+Title: Docusign eSignature 24.4.00.00 Release Notes: December 2024
+
+---------------------------
+Title: New and Enhanced Features﻿
+
+---------------------------
 Title: Release Note Applicability
 Paragraph: This
                         publication applies to the Demo and Production releases for December 2024,
@@ -39,6 +45,28 @@ Bullet: Quickly identifying a specific account or configuration that is
                             experiencing a Connect failure.
 Bullet: Proactively consolidating hundreds of Configurations into a single
                             Organization Level Connect configuration
+Sub Bullet: Supported functionality
+Sub Title: Organization-level Connect configurations support only the Connect
+                                2.0 (JSON/SIM) experience. The supported security options are HMAC,
+                                TLS, and OAuth. Basic Authentication is not supported.
+Sub Bullet: Availability
+Sub Title: Organization-level Connect will soon be available on Enterprise Pro
+                                and Organization Management plans.Phase 1The ability to manage account level configurations and
+                                            view Connect logs across all configurations at the
+                                            Organization level. Available by mid-December 2024.Phase 2The ability to create Organization-level Configurations,
+                                            Republishing Envelopes, and enhanced search
+                                            functionality. Available by the end of January
+                                            2025.
+Sub Bullet: Phase 1
+Sub Title: The ability to manage account level configurations and
+                                            view Connect logs across all configurations at the
+                                            Organization level. Available by mid-December 2024.
+Sub Bullet: Phase 2
+Sub Title: The ability to create Organization-level Configurations,
+                                            Republishing Envelopes, and enhanced search
+                                            functionality. Available by the end of January
+                                            2025.
+Image: Screenshot of Connect (Webhooks) page. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Connect-Webhooks.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Title: Email Branding - Updates to Color and Icons
@@ -68,6 +96,7 @@ Bullet: BothSigningandSendingbrands need to be set up with basic
 						related emails (Account activation as an example) are affected by Sending
 						brand.
 Paragraph: This is what our standard emails will look like:
+Image: Screenshot of IAM eSignature email. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/IAM-email-updated-colors.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Title: New Colors and Fonts on Prepare Page
@@ -75,6 +104,7 @@ Paragraph: As part of the company-wide branding effort, we are rolling out the n
 				to the web application. In the beginning of December, colors and fonts on thePreparepage will be updated. This is purely a visual
 				change and there are no functional changes being rolled out as part of this
 				update.
+Image: Screenshot of updated Prepare page colors. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Prepare-screen-color-updates.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Title: Country Code Dropdown for Phone Verification Fields
@@ -82,6 +112,7 @@ Paragraph: With this enhancement, the Data Verification phone field group will
                             provide a dropdown of country calling codes. Signers will now be able to
                             select a country from a pre-populated list. This offers a better signing
                             experience, and helps reduce verification errors.
+Image: Screenshot of international country calling codes. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/International-Calling-Codes.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Title: Data Verification in eSignature - Twilio App for Email Verification
@@ -105,11 +136,13 @@ Paragraph: Data verification field groups can contain both required and optional
 				fields. With this enhancement, all required fields in a group are protected and
 				cannot be deleted. This change ensures that verifications receive the necessary data
 				to complete without errors.
+Image: Screenshot of Data Verification Grouped Fields , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 Paragraph: Required fields in a verification group are indicated by a red asterisk. For example,
 				the verification group forPostal Addresscontains both
 				required and optional fields. In this group, “Address Line 2” is optional; the
 				preparer can delete this field after adding the group to their document. However,
 				the remaining fields are all required and cannot be deleted.
+Image: Screenshot of deletion notice for verification field group. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Data-Verification-Grouped-Fields-Deletion-Notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Note: Note:You cannot delete individual fields from the
@@ -165,20 +198,50 @@ Paragraph: The sender name has been removed to provide more space for key variab
 Paragraph: This modernization ensures messages appear more relevant and trustworthy to signers,
 				enabling faster recognition and action. These updates are designed to help signers
 				complete their envelopes more quickly and increase overall completion rates.
+Sub Bullet: Current SMS Templates
+Sub Title: Needs to Sign{Sender Name} from {Company Name} has sent you aDocusigndocument
+										“{Document Name}” to view and sign: {Envelope URL}Carbon Copy (CC){Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
+										{Envelope URL}Certified Delivery (CD){Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
+										review: {Envelope URL}
+Sub Bullet: Needs to Sign
+Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument
+										“{Document Name}” to view and sign: {Envelope URL}
 Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument
 										“{Document Name}” to view and sign: {Envelope URL}
+Sub Bullet: Carbon Copy (CC)
+Sub Title: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
+										{Envelope URL}
 Paragraph: {Sender Name} from {Company Name} has CC-ed you onDocusigndocument “{Document Name}”:
 										{Envelope URL}
+Sub Bullet: Certified Delivery (CD)
+Sub Title: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
+										review: {Envelope URL}
 Paragraph: {Sender Name} from {Company Name} has sent you aDocusigndocument “{Document Name}” to
 										review: {Envelope URL}
+Sub Bullet: New SMS Templates
+Sub Title: Needs to SignDocusign: {companyName} sent you
+										“{documentName}” to sign: {Envelope URL}Carbon Copy (CC)Docusign: {companyName} CC-ed you on
+										“{agreementName}”: {Envelope URL}Certified Delivery (CD)Docusign: {companyName} sent you
+										“{agreementName}” to review: {Envelope URL}The SMS message from the updated template would look similar to the
+							following:
+Sub Bullet: Needs to Sign
+Sub Title: Docusign: {companyName} sent you
+										“{documentName}” to sign: {Envelope URL}
 Paragraph: Docusign: {companyName} sent you
 										“{documentName}” to sign: {Envelope URL}
+Sub Bullet: Carbon Copy (CC)
+Sub Title: Docusign: {companyName} CC-ed you on
+										“{agreementName}”: {Envelope URL}
 Paragraph: Docusign: {companyName} CC-ed you on
 										“{agreementName}”: {Envelope URL}
+Sub Bullet: Certified Delivery (CD)
+Sub Title: Docusign: {companyName} sent you
+										“{agreementName}” to review: {Envelope URL}
 Paragraph: Docusign: {companyName} sent you
 										“{agreementName}” to review: {Envelope URL}
 Paragraph: The SMS message from the updated template would look similar to the
 							following:
+Image: Screenshot of SMS message with updated templates. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/SMS-Mobile-Message.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 
 ---------------------------
 Title: Update to the Signing Process for Signing Groups
@@ -190,6 +253,7 @@ Paragraph: We will begin ramping in early December and conclude in January. We a
 				for signers to improve awareness of the signer's role in the process. A new modal
 				will now be displayed to the first member of the group who accesses the
 				envelope:
+Image: Screenshot of Signing Group assignment notice. , Link: https://docusign-be-prod.zoominsoftware.io/api/bundle/oqn1730308722576/page/Signing-Group-assignment-notice.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjdXN0b21lciI6ImRvY3VzaWduX3Byb2R1Y3Rpb24iLCJleHAiOjE3MzQ3NDg1MTksInNoZWFmIjoib3FuMTczMDMwODcyMjU3NiJ9.LBI84tJ4XtQ0SusIUBXG4pMkymPJ7u1JUMJq4qbyUqM&_LANG=enus
 Paragraph: This modal provides two key improvements to the signing process:
 Bullet: Informs the signer that they are the first one in the signing group to access
 						the envelope.
